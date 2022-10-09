@@ -1,12 +1,12 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import { GadaProvider } from "@issue/web-core";
+import { MyProvider } from "@issue/web-core";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <GadaProvider>
+    <MyProvider>
       <Component {...pageProps} />
-    </GadaProvider>
+    </MyProvider>
   );
 }
 

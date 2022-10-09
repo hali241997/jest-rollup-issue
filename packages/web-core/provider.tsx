@@ -2,10 +2,10 @@ import React from "react";
 import { Provider } from "react-redux";
 import { store } from "./store";
 
-type GadaProviderProps = { children: React.ReactNode };
+type MyProviderProps = { children: React.ReactNode };
 
-const GadaProvider: React.FC<GadaProviderProps> = ({ children }) => {
+const MyProvider: React.FC<MyProviderProps> = ({ children }) => {
   return <Provider store={store}>{children}</Provider>;
 };
 
-export default GadaProvider;
+export default MyProvider;
