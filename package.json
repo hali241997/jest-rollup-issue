@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "name": "jest-rollup-issue",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "yarn workspace @issue/web-app dev",
+    "test": "lerna run test"
+  },
+  "devDependencies": {
+    "lerna": "^5.3.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
