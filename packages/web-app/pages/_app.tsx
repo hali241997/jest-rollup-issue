@@ -1,14 +1,15 @@
-import { MyProvider } from "@issue/web-core";
+import { store } from "@issue/web-core";
 import type { AppProps } from "next/app";
+import { Provider } from "react-redux";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const RootComponent = Component as any;
 
   return (
-    <MyProvider>
+    <Provider store={store}>
       <RootComponent {...pageProps} />
-    </MyProvider>
+    </Provider>
   );
 }
 
